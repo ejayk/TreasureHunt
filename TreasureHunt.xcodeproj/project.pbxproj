@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25232475261F5D7400DC501D /* TeamDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25232474261F5D7400DC501D /* TeamDetailsViewController.swift */; };
 		25FCBD8725F976C30097FC20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCBD8625F976C30097FC20 /* AppDelegate.swift */; };
 		25FCBD8925F976C30097FC20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCBD8825F976C30097FC20 /* SceneDelegate.swift */; };
 		25FCBD8B25F976C30097FC20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCBD8A25F976C30097FC20 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25232474261F5D7400DC501D /* TeamDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsViewController.swift; sourceTree = "<group>"; };
 		25FCBD8325F976C30097FC20 /* TreasureHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FCBD8625F976C30097FC20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25FCBD8825F976C30097FC20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				25FCBD8F25F976C40097FC20 /* Assets.xcassets */,
 				25FCBD9125F976C40097FC20 /* LaunchScreen.storyboard */,
 				25FCBD9425F976C40097FC20 /* Info.plist */,
+				25232474261F5D7400DC501D /* TeamDetailsViewController.swift */,
 			);
 			path = TreasureHunt;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				25FCBD8B25F976C30097FC20 /* ViewController.swift in Sources */,
 				25FCBD8725F976C30097FC20 /* AppDelegate.swift in Sources */,
+				25232475261F5D7400DC501D /* TeamDetailsViewController.swift in Sources */,
 				25FCBD8925F976C30097FC20 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
