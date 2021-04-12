@@ -12,6 +12,9 @@ class TeamDetailsViewController: UIViewController {
     private var email = "someone@georgebrown.ca" // replace with team member's email
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameLbl.text = "Tim"
+        phoneLbl.text = phoneNum
+        emailLbl.text = email
     }
 
     @IBAction func callMember(_ sender: UIButton) {
@@ -26,6 +29,10 @@ class TeamDetailsViewController: UIViewController {
         makeEmail(email)
     }
 
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var phoneLbl: UILabel!
+    @IBOutlet weak var emailLbl: UILabel!
+    
     // Functions for interacting
     func makeCall(_ phoneNumber: String){
         if let phoneURL = NSURL(string: ("tel://" + phoneNumber)) {

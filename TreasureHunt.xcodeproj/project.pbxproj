@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02A615773F2C0EC4AC12BF03 /* Pods_TreasureHuntTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 898ED54C0E829DF5093421B9 /* Pods_TreasureHuntTests.framework */; };
+		053FD4EBA05221291100721F /* Pods_TreasureHunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3506DE6A46D5307901ED5933 /* Pods_TreasureHunt.framework */; };
 		25232475261F5D7400DC501D /* TeamDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25232474261F5D7400DC501D /* TeamDetailsViewController.swift */; };
 		25FCBD8725F976C30097FC20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCBD8625F976C30097FC20 /* AppDelegate.swift */; };
 		25FCBD8925F976C30097FC20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCBD8825F976C30097FC20 /* SceneDelegate.swift */; };
@@ -14,8 +16,20 @@
 		25FCBD8E25F976C30097FC20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FCBD8C25F976C30097FC20 /* Main.storyboard */; };
 		25FCBD9025F976C40097FC20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25FCBD8F25F976C40097FC20 /* Assets.xcassets */; };
 		25FCBD9325F976C40097FC20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FCBD9125F976C40097FC20 /* LaunchScreen.storyboard */; };
-		25FCBD9E25F976C40097FC20 /* TreasureHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCBD9D25F976C40097FC20 /* TreasureHuntTests.swift */; };
 		25FCBDA925F976C40097FC20 /* TreasureHuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCBDA825F976C40097FC20 /* TreasureHuntUITests.swift */; };
+		B51FC0BA26238CE4008132DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B51FC0B926238CE4008132DC /* GoogleService-Info.plist */; };
+		B51FC0BB26238CE4008132DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B51FC0B926238CE4008132DC /* GoogleService-Info.plist */; };
+		B51FC0BC26238CE4008132DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B51FC0B926238CE4008132DC /* GoogleService-Info.plist */; };
+		B51FC0C826239879008132DC /* TeamMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FC0C726239879008132DC /* TeamMember.swift */; };
+		B51FC0D426239DEE008132DC /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FC0D326239DEE008132DC /* DatabaseManager.swift */; };
+		B51FC0DC2623C376008132DC /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FC0DB2623C376008132DC /* Flag.swift */; };
+		B51FC0E52623C67A008132DC /* FlagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FC0E42623C67A008132DC /* FlagsViewController.swift */; };
+		B51FC0EA2623C716008132DC /* FlagDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FC0E92623C716008132DC /* FlagDetailsViewController.swift */; };
+		B51FC0EF2623C730008132DC /* FlagAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FC0EE2623C72F008132DC /* FlagAddViewController.swift */; };
+		B51FC0F42623C85C008132DC /* AchivmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FC0F32623C85C008132DC /* AchivmentsViewController.swift */; };
+		B5CFCCF226234A36005A44BD /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CFCCF126234A36005A44BD /* TeamViewController.swift */; };
+		B5CFCCFB26234ACE005A44BD /* AddTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CFCCFA26234ACE005A44BD /* AddTeamViewController.swift */; };
+		D1E5A693F49F09DFDA7AFBE1 /* Pods_TreasureHunt_TreasureHuntUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF935EA393A0D37DAF7D852D /* Pods_TreasureHunt_TreasureHuntUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03C89B2B691DE8457C42601E /* Pods-TreasureHunt-TreasureHuntUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureHunt-TreasureHuntUITests.debug.xcconfig"; path = "Target Support Files/Pods-TreasureHunt-TreasureHuntUITests/Pods-TreasureHunt-TreasureHuntUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		241BA72A4FD32EB7B36CF03C /* Pods-TreasureHuntTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureHuntTests.debug.xcconfig"; path = "Target Support Files/Pods-TreasureHuntTests/Pods-TreasureHuntTests.debug.xcconfig"; sourceTree = "<group>"; };
 		25232474261F5D7400DC501D /* TeamDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsViewController.swift; sourceTree = "<group>"; };
 		25FCBD8325F976C30097FC20 /* TreasureHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FCBD8625F976C30097FC20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,11 +62,27 @@
 		25FCBD9225F976C40097FC20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25FCBD9425F976C40097FC20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25FCBD9925F976C40097FC20 /* TreasureHuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureHuntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		25FCBD9D25F976C40097FC20 /* TreasureHuntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntTests.swift; sourceTree = "<group>"; };
 		25FCBD9F25F976C40097FC20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25FCBDA425F976C40097FC20 /* TreasureHuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureHuntUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FCBDA825F976C40097FC20 /* TreasureHuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntUITests.swift; sourceTree = "<group>"; };
 		25FCBDAA25F976C40097FC20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3506DE6A46D5307901ED5933 /* Pods_TreasureHunt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreasureHunt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C89163DBEECB52F0F43DF8 /* Pods-TreasureHunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureHunt.debug.xcconfig"; path = "Target Support Files/Pods-TreasureHunt/Pods-TreasureHunt.debug.xcconfig"; sourceTree = "<group>"; };
+		58B0544CF92DA39FD2894FD6 /* Pods-TreasureHuntTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureHuntTests.release.xcconfig"; path = "Target Support Files/Pods-TreasureHuntTests/Pods-TreasureHuntTests.release.xcconfig"; sourceTree = "<group>"; };
+		62E101DCD3388DA07ACD2404 /* Pods-TreasureHunt-TreasureHuntUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureHunt-TreasureHuntUITests.release.xcconfig"; path = "Target Support Files/Pods-TreasureHunt-TreasureHuntUITests/Pods-TreasureHunt-TreasureHuntUITests.release.xcconfig"; sourceTree = "<group>"; };
+		898ED54C0E829DF5093421B9 /* Pods_TreasureHuntTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreasureHuntTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51FC0B926238CE4008132DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B51FC0C726239879008132DC /* TeamMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMember.swift; sourceTree = "<group>"; };
+		B51FC0D326239DEE008132DC /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		B51FC0DB2623C376008132DC /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		B51FC0E42623C67A008132DC /* FlagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsViewController.swift; sourceTree = "<group>"; };
+		B51FC0E92623C716008132DC /* FlagDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailsViewController.swift; sourceTree = "<group>"; };
+		B51FC0EE2623C72F008132DC /* FlagAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagAddViewController.swift; sourceTree = "<group>"; };
+		B51FC0F32623C85C008132DC /* AchivmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivmentsViewController.swift; sourceTree = "<group>"; };
+		B5CFCCF126234A36005A44BD /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		B5CFCCFA26234ACE005A44BD /* AddTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamViewController.swift; sourceTree = "<group>"; };
+		DF935EA393A0D37DAF7D852D /* Pods_TreasureHunt_TreasureHuntUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreasureHunt_TreasureHuntUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6CA16399DC2400BDF93C6D /* Pods-TreasureHunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureHunt.release.xcconfig"; path = "Target Support Files/Pods-TreasureHunt/Pods-TreasureHunt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053FD4EBA05221291100721F /* Pods_TreasureHunt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02A615773F2C0EC4AC12BF03 /* Pods_TreasureHuntTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E5A693F49F09DFDA7AFBE1 /* Pods_TreasureHunt_TreasureHuntUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +120,8 @@
 				25FCBD9C25F976C40097FC20 /* TreasureHuntTests */,
 				25FCBDA725F976C40097FC20 /* TreasureHuntUITests */,
 				25FCBD8425F976C30097FC20 /* Products */,
+				AD045F747C9228331C2A07E2 /* Pods */,
+				B3FD8B18C9DDE7CA8DEE8528 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +138,12 @@
 		25FCBD8525F976C30097FC20 /* TreasureHunt */ = {
 			isa = PBXGroup;
 			children = (
-				25FCBD8625F976C30097FC20 /* AppDelegate.swift */,
-				25FCBD8825F976C30097FC20 /* SceneDelegate.swift */,
-				25FCBD8A25F976C30097FC20 /* ViewController.swift */,
-				25FCBD8C25F976C30097FC20 /* Main.storyboard */,
+				B51FC0D226239DA4008132DC /* Resources */,
+				B51FC0C3262397BB008132DC /* Models */,
+				B5CFCCEC262348D2005A44BD /* Views */,
 				25FCBD8F25F976C40097FC20 /* Assets.xcassets */,
-				25FCBD9125F976C40097FC20 /* LaunchScreen.storyboard */,
 				25FCBD9425F976C40097FC20 /* Info.plist */,
-				25232474261F5D7400DC501D /* TeamDetailsViewController.swift */,
+				B51FC0B926238CE4008132DC /* GoogleService-Info.plist */,
 			);
 			path = TreasureHunt;
 			sourceTree = "<group>";
@@ -116,7 +151,6 @@
 		25FCBD9C25F976C40097FC20 /* TreasureHuntTests */ = {
 			isa = PBXGroup;
 			children = (
-				25FCBD9D25F976C40097FC20 /* TreasureHuntTests.swift */,
 				25FCBD9F25F976C40097FC20 /* Info.plist */,
 			);
 			path = TreasureHuntTests;
@@ -131,6 +165,89 @@
 			path = TreasureHuntUITests;
 			sourceTree = "<group>";
 		};
+		AD045F747C9228331C2A07E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43C89163DBEECB52F0F43DF8 /* Pods-TreasureHunt.debug.xcconfig */,
+				FE6CA16399DC2400BDF93C6D /* Pods-TreasureHunt.release.xcconfig */,
+				03C89B2B691DE8457C42601E /* Pods-TreasureHunt-TreasureHuntUITests.debug.xcconfig */,
+				62E101DCD3388DA07ACD2404 /* Pods-TreasureHunt-TreasureHuntUITests.release.xcconfig */,
+				241BA72A4FD32EB7B36CF03C /* Pods-TreasureHuntTests.debug.xcconfig */,
+				58B0544CF92DA39FD2894FD6 /* Pods-TreasureHuntTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B3FD8B18C9DDE7CA8DEE8528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3506DE6A46D5307901ED5933 /* Pods_TreasureHunt.framework */,
+				DF935EA393A0D37DAF7D852D /* Pods_TreasureHunt_TreasureHuntUITests.framework */,
+				898ED54C0E829DF5093421B9 /* Pods_TreasureHuntTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B51FC0C3262397BB008132DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B51FC0C726239879008132DC /* TeamMember.swift */,
+				B51FC0DB2623C376008132DC /* Flag.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B51FC0D226239DA4008132DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				25FCBD8625F976C30097FC20 /* AppDelegate.swift */,
+				25FCBD8825F976C30097FC20 /* SceneDelegate.swift */,
+				B51FC0D326239DEE008132DC /* DatabaseManager.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B51FC0E02623C3E5008132DC /* FlagViews */ = {
+			isa = PBXGroup;
+			children = (
+				B51FC0E42623C67A008132DC /* FlagsViewController.swift */,
+				B51FC0E92623C716008132DC /* FlagDetailsViewController.swift */,
+				B51FC0EE2623C72F008132DC /* FlagAddViewController.swift */,
+			);
+			path = FlagViews;
+			sourceTree = "<group>";
+		};
+		B5CFCCEC262348D2005A44BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B51FC0E02623C3E5008132DC /* FlagViews */,
+				B5CFCCF926234AAC005A44BD /* TeamViews */,
+				25FCBD8A25F976C30097FC20 /* ViewController.swift */,
+				B5CFCCED262348F0005A44BD /* Storyboard */,
+				B51FC0F32623C85C008132DC /* AchivmentsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5CFCCED262348F0005A44BD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				25FCBD8C25F976C30097FC20 /* Main.storyboard */,
+				25FCBD9125F976C40097FC20 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B5CFCCF926234AAC005A44BD /* TeamViews */ = {
+			isa = PBXGroup;
+			children = (
+				25232474261F5D7400DC501D /* TeamDetailsViewController.swift */,
+				B5CFCCF126234A36005A44BD /* TeamViewController.swift */,
+				B5CFCCFA26234ACE005A44BD /* AddTeamViewController.swift */,
+			);
+			path = TeamViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25FCBDAD25F976C40097FC20 /* Build configuration list for PBXNativeTarget "TreasureHunt" */;
 			buildPhases = (
+				BE1CAFEE4E8A0ADACB750AA2 /* [CP] Check Pods Manifest.lock */,
 				25FCBD7F25F976C30097FC20 /* Sources */,
 				25FCBD8025F976C30097FC20 /* Frameworks */,
 				25FCBD8125F976C30097FC20 /* Resources */,
+				831EC68622F40572CEBE3F12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +274,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25FCBDB025F976C40097FC20 /* Build configuration list for PBXNativeTarget "TreasureHuntTests" */;
 			buildPhases = (
+				91DEFE868C6775F5A942F048 /* [CP] Check Pods Manifest.lock */,
 				25FCBD9525F976C40097FC20 /* Sources */,
 				25FCBD9625F976C40097FC20 /* Frameworks */,
 				25FCBD9725F976C40097FC20 /* Resources */,
@@ -173,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25FCBDB325F976C40097FC20 /* Build configuration list for PBXNativeTarget "TreasureHuntUITests" */;
 			buildPhases = (
+				C8D6CD91BD24CF4406C60C4E /* [CP] Check Pods Manifest.lock */,
 				25FCBDA025F976C40097FC20 /* Sources */,
 				25FCBDA125F976C40097FC20 /* Frameworks */,
 				25FCBDA225F976C40097FC20 /* Resources */,
+				B4F281585A4AB1B95220A00A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25FCBD9325F976C40097FC20 /* LaunchScreen.storyboard in Resources */,
+				B51FC0BA26238CE4008132DC /* GoogleService-Info.plist in Resources */,
 				25FCBD9025F976C40097FC20 /* Assets.xcassets in Resources */,
 				25FCBD8E25F976C30097FC20 /* Main.storyboard in Resources */,
 			);
@@ -244,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51FC0BB26238CE4008132DC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,20 +375,133 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51FC0BC26238CE4008132DC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		831EC68622F40572CEBE3F12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreasureHunt/Pods-TreasureHunt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreasureHunt/Pods-TreasureHunt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TreasureHunt/Pods-TreasureHunt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91DEFE868C6775F5A942F048 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TreasureHuntTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4F281585A4AB1B95220A00A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreasureHunt-TreasureHuntUITests/Pods-TreasureHunt-TreasureHuntUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreasureHunt-TreasureHuntUITests/Pods-TreasureHunt-TreasureHuntUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TreasureHunt-TreasureHuntUITests/Pods-TreasureHunt-TreasureHuntUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE1CAFEE4E8A0ADACB750AA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TreasureHunt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8D6CD91BD24CF4406C60C4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TreasureHunt-TreasureHuntUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		25FCBD7F25F976C30097FC20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51FC0D426239DEE008132DC /* DatabaseManager.swift in Sources */,
 				25FCBD8B25F976C30097FC20 /* ViewController.swift in Sources */,
+				B51FC0E52623C67A008132DC /* FlagsViewController.swift in Sources */,
+				B5CFCCFB26234ACE005A44BD /* AddTeamViewController.swift in Sources */,
+				B51FC0EF2623C730008132DC /* FlagAddViewController.swift in Sources */,
+				B51FC0C826239879008132DC /* TeamMember.swift in Sources */,
+				B51FC0DC2623C376008132DC /* Flag.swift in Sources */,
 				25FCBD8725F976C30097FC20 /* AppDelegate.swift in Sources */,
 				25232475261F5D7400DC501D /* TeamDetailsViewController.swift in Sources */,
+				B51FC0F42623C85C008132DC /* AchivmentsViewController.swift in Sources */,
+				B51FC0EA2623C716008132DC /* FlagDetailsViewController.swift in Sources */,
 				25FCBD8925F976C30097FC20 /* SceneDelegate.swift in Sources */,
+				B5CFCCF226234A36005A44BD /* TeamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +509,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25FCBD9E25F976C40097FC20 /* TreasureHuntTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +673,7 @@
 		};
 		25FCBDAE25F976C40097FC20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C89163DBEECB52F0F43DF8 /* Pods-TreasureHunt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +693,7 @@
 		};
 		25FCBDAF25F976C40097FC20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE6CA16399DC2400BDF93C6D /* Pods-TreasureHunt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +713,7 @@
 		};
 		25FCBDB125F976C40097FC20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241BA72A4FD32EB7B36CF03C /* Pods-TreasureHuntTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +736,7 @@
 		};
 		25FCBDB225F976C40097FC20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58B0544CF92DA39FD2894FD6 /* Pods-TreasureHuntTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +759,7 @@
 		};
 		25FCBDB425F976C40097FC20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03C89B2B691DE8457C42601E /* Pods-TreasureHunt-TreasureHuntUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +780,7 @@
 		};
 		25FCBDB525F976C40097FC20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62E101DCD3388DA07ACD2404 /* Pods-TreasureHunt-TreasureHuntUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
