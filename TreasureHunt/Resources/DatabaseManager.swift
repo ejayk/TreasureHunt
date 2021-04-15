@@ -8,8 +8,6 @@
 import Foundation
 import FirebaseDatabase
 
-final class DatabaseManager{
-    public static let shared = DatabaseManager()
-    
-    private let ref = Database.database().reference()
+protocol DatabaseManager{
+
 }

@@ -17,9 +17,6 @@
 		25FCBD9025F976C40097FC20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25FCBD8F25F976C40097FC20 /* Assets.xcassets */; };
 		25FCBD9325F976C40097FC20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FCBD9125F976C40097FC20 /* LaunchScreen.storyboard */; };
 		25FCBDA925F976C40097FC20 /* TreasureHuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCBDA825F976C40097FC20 /* TreasureHuntUITests.swift */; };
-		B51FC0BA26238CE4008132DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B51FC0B926238CE4008132DC /* GoogleService-Info.plist */; };
-		B51FC0BB26238CE4008132DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B51FC0B926238CE4008132DC /* GoogleService-Info.plist */; };
-		B51FC0BC26238CE4008132DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B51FC0B926238CE4008132DC /* GoogleService-Info.plist */; };
 		B51FC0C826239879008132DC /* TeamMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FC0C726239879008132DC /* TeamMember.swift */; };
 		B51FC0D426239DEE008132DC /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FC0D326239DEE008132DC /* DatabaseManager.swift */; };
 		B51FC0DC2623C376008132DC /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FC0DB2623C376008132DC /* Flag.swift */; };
@@ -27,6 +24,9 @@
 		B51FC0EA2623C716008132DC /* FlagDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FC0E92623C716008132DC /* FlagDetailsViewController.swift */; };
 		B51FC0EF2623C730008132DC /* FlagAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FC0EE2623C72F008132DC /* FlagAddViewController.swift */; };
 		B51FC0F42623C85C008132DC /* AchivmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FC0F32623C85C008132DC /* AchivmentsViewController.swift */; };
+		B5568AF426289A050021C163 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5568AF326289A050021C163 /* GoogleService-Info.plist */; };
+		B5568AF526289A050021C163 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5568AF326289A050021C163 /* GoogleService-Info.plist */; };
+		B5568AF626289A050021C163 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5568AF326289A050021C163 /* GoogleService-Info.plist */; };
 		B5CFCCF226234A36005A44BD /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CFCCF126234A36005A44BD /* TeamViewController.swift */; };
 		B5CFCCFB26234ACE005A44BD /* AddTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CFCCFA26234ACE005A44BD /* AddTeamViewController.swift */; };
 		D1E5A693F49F09DFDA7AFBE1 /* Pods_TreasureHunt_TreasureHuntUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF935EA393A0D37DAF7D852D /* Pods_TreasureHunt_TreasureHuntUITests.framework */; };
@@ -71,7 +71,6 @@
 		58B0544CF92DA39FD2894FD6 /* Pods-TreasureHuntTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureHuntTests.release.xcconfig"; path = "Target Support Files/Pods-TreasureHuntTests/Pods-TreasureHuntTests.release.xcconfig"; sourceTree = "<group>"; };
 		62E101DCD3388DA07ACD2404 /* Pods-TreasureHunt-TreasureHuntUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureHunt-TreasureHuntUITests.release.xcconfig"; path = "Target Support Files/Pods-TreasureHunt-TreasureHuntUITests/Pods-TreasureHunt-TreasureHuntUITests.release.xcconfig"; sourceTree = "<group>"; };
 		898ED54C0E829DF5093421B9 /* Pods_TreasureHuntTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreasureHuntTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B51FC0B926238CE4008132DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B51FC0C726239879008132DC /* TeamMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMember.swift; sourceTree = "<group>"; };
 		B51FC0D326239DEE008132DC /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		B51FC0DB2623C376008132DC /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
@@ -79,6 +78,7 @@
 		B51FC0E92623C716008132DC /* FlagDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailsViewController.swift; sourceTree = "<group>"; };
 		B51FC0EE2623C72F008132DC /* FlagAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagAddViewController.swift; sourceTree = "<group>"; };
 		B51FC0F32623C85C008132DC /* AchivmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivmentsViewController.swift; sourceTree = "<group>"; };
+		B5568AF326289A050021C163 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B5CFCCF126234A36005A44BD /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		B5CFCCFA26234ACE005A44BD /* AddTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamViewController.swift; sourceTree = "<group>"; };
 		DF935EA393A0D37DAF7D852D /* Pods_TreasureHunt_TreasureHuntUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreasureHunt_TreasureHuntUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,7 +143,7 @@
 				B5CFCCEC262348D2005A44BD /* Views */,
 				25FCBD8F25F976C40097FC20 /* Assets.xcassets */,
 				25FCBD9425F976C40097FC20 /* Info.plist */,
-				B51FC0B926238CE4008132DC /* GoogleService-Info.plist */,
+				B5568AF326289A050021C163 /* GoogleService-Info.plist */,
 			);
 			path = TreasureHunt;
 			sourceTree = "<group>";
@@ -357,7 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25FCBD9325F976C40097FC20 /* LaunchScreen.storyboard in Resources */,
-				B51FC0BA26238CE4008132DC /* GoogleService-Info.plist in Resources */,
+				B5568AF426289A050021C163 /* GoogleService-Info.plist in Resources */,
 				25FCBD9025F976C40097FC20 /* Assets.xcassets in Resources */,
 				25FCBD8E25F976C30097FC20 /* Main.storyboard in Resources */,
 			);
@@ -367,7 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B51FC0BB26238CE4008132DC /* GoogleService-Info.plist in Resources */,
+				B5568AF526289A050021C163 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B51FC0BC26238CE4008132DC /* GoogleService-Info.plist in Resources */,
+				B5568AF626289A050021C163 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
