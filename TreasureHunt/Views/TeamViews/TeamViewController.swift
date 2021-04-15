@@ -15,58 +15,45 @@ class TeamViewController: UIViewController {
     var teamMembers: [TeamMember] = []
     var test = ""
     
-    private let ref = Database.database().reference()
+    private let team_members_reference: DatabaseReference = Database.database().reference(withPath: "team_members")
     
     @IBOutlet weak var teamMembersTblView: UITableView!
     @IBAction func plusButton(_ sender: UIBarButtonItem) {
         let addTeamVC = storyboard?.instantiateViewController(identifier: "AddTeam") as! AddTeamViewController
         addTeamVC.modalPresentationStyle = .automatic
-//        addTeamVC.TeammateData = { name, phone, email in
-//            self.setTeammate(name: name!, phoneNo: phone!, email: email!)
-//            self.test = name!
-//            print("test button: \(self.test)")
-//        }
         present(addTeamVC, animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         teamMembersTblView.dataSource = self
-        
-//        ref.child("team_members/-MY1vywLQOvMb6dRzNIf").observeSingleEvent(of: .value, with: { (snapshot) in
-//            guard let value = snapshot.value as? [String: Any] else{
-//                return
-//            }
-//
-//            //let teamMember = value;
-//        })
-        
+        team_members_reference.observeSingleEvent(of: .value) { (snapshot) in
+            let snaps = snapshot.children.allObjects.compactMap({$0 as? DataSnapshot})
+            let dicts = snaps.compactMap({$0.value as? NSDictionary})
+            print(dicts)
+            for dict in dicts{
+                self.teamMembers.append(TeamMember.init(name: dict["name"] as! String,
+                                                   phoneNo: dict["phoneNo"] as! String,
+                                                   email: dict["email"] as! String))
+            }
+            self.teamMembersTblView.reloadData()
+        }
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-       
-    }
-
-    
-//    func setTeammate(name: String, phoneNo : String,  email: String) -> Void{
-//        teamMembers.append(TeamMember(name: "name", phoneNo: "phoneNo", email: "email"))
-//    }
-    
-    
 }
 
 // MARK:- TableView Setup
 // Setting up the cells for the table view controller
 extension TeamViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1//teamMembers.count
+        return teamMembers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID, for: indexPath)
-        //let teamMember = teamMembers[indexPath.row]
+        let teamMember = teamMembers[indexPath.row]
         
-        cell.textLabel?.text = "Tim"//teamMember.name
+        cell.textLabel?.text = "Name: \(teamMember.name)"
         return cell
+        
     }
 }
