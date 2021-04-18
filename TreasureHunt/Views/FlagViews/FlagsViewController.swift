@@ -30,12 +30,11 @@ class FlagsViewController: UIViewController, UITableViewDelegate {
                                             address: dict["address"] as! String,
                                             task: dict["task"] as! String,
                                             tags: dict["tags"] as! String,
-                                            description: dict["description"] as! String))
+                                            description: dict["description"] as! String,
+                                            rating: dict["rating"] as! Double))
             }
             self.flagsTbl.reloadData()
         }
-        
-        
     }
     
 }

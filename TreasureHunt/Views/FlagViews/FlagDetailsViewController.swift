@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Cosmos
 
 class FlagDetailsViewController: UIViewController {
 
@@ -13,13 +14,15 @@ class FlagDetailsViewController: UIViewController {
                                 address: "",
                                 task: "",
                                 tags: "",
-                                description: "")
+                                description: "",
+                                rating: 0.0)
     
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var addressLbl: UILabel!
     @IBOutlet weak var taskTxtView: UITextView!
     @IBOutlet weak var tagsLbl: UILabel!
     @IBOutlet weak var descriptionTxtView: UITextView!
+    @IBOutlet weak var ratingView: CosmosView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,5 +32,6 @@ class FlagDetailsViewController: UIViewController {
         taskTxtView.text = flag.task
         tagsLbl.text = flag.tags
         descriptionTxtView.text = flag.description
+        ratingView.rating = flag.rating
     }
 }

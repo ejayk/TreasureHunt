@@ -15,5 +15,5 @@ struct Flag{
     var task: String
     var tags: String
     var description: String
-    //var rating: String
+    var rating: Double
 }

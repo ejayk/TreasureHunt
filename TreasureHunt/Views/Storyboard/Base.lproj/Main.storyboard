@@ -873,6 +873,7 @@
                         <outlet property="addressLbl" destination="w3D-8G-a12" id="9JB-lx-ycw"/>
                         <outlet property="descriptionTxtView" destination="Yel-rk-d0j" id="n7l-w8-FD0"/>
                         <outlet property="nameLbl" destination="1Xi-7L-HHK" id="bMb-45-d1d"/>
+                        <outlet property="ratingView" destination="XWP-Ne-yjc" id="E43-mh-4FA"/>
                         <outlet property="tagsLbl" destination="ldp-bu-gpi" id="Yio-RF-Bp1"/>
                         <outlet property="taskTxtView" destination="3tY-th-U6u" id="gBm-ed-LQa"/>
                     </connections>
