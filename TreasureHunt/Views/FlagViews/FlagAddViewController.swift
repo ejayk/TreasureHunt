@@ -34,6 +34,7 @@ class FlagAddViewController: UIViewController {
         let task = taskTextField.text
         let tags = tagsTextField.text
         let description = descriptionTextView.text
+        let rating = ratingView.rating
         
         if name != "" && address != "" && task != "" && tags != "" && description != ""{
     
@@ -42,7 +43,8 @@ class FlagAddViewController: UIViewController {
                 "address": address ?? "",
                 "task": task ?? "",
                 "tags": tags ?? "",
-                "description": description ?? ""
+                "description": description ?? "",
+                "rating": rating 
             ]
 
             
