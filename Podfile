@@ -9,6 +9,8 @@ target 'TreasureHunt' do
 
 pod 'Firebase/Analytics'
 pod 'Firebase/Database'
+pod 'Cosmos'
+pod 'TinyConstraints'
 
   target 'TreasureHuntTests' do
     inherit! :search_paths
