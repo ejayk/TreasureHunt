@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseDatabase
 
-class TeamViewController: UIViewController {
+class TeamViewController: UIViewController, UITableViewDelegate {
 
     fileprivate let CELL_ID = "TeamCell"
     
@@ -27,6 +27,7 @@ class TeamViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         teamMembersTblView.dataSource = self
+        teamMembersTblView.delegate = self
         team_members_reference.observeSingleEvent(of: .value) { (snapshot) in
             let snaps = snapshot.children.allObjects.compactMap({$0 as? DataSnapshot})
             let dicts = snaps.compactMap({$0.value as? NSDictionary})
@@ -54,6 +55,16 @@ extension TeamViewController: UITableViewDataSource{
         
         cell.textLabel?.text = "Name: \(teamMember.name)"
         return cell
-        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let vc = storyboard?.instantiateViewController(identifier: "TeamDetailsViewController") as? TeamDetailsViewController
+        let teamMember = teamMembers[indexPath.row]
+        vc?.name = teamMember.name
+        vc?.email = teamMember.email
+        vc?.phoneNum = teamMember.phoneNo
+        vc?.title = "\(teamMember.name) Details"
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
 }
