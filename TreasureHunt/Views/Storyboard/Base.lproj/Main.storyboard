@@ -698,7 +698,7 @@
         <!--Flag Details-->
         <scene sceneID="NQM-Ul-qmF">
             <objects>
-                <viewController title="Flag Details" id="pvG-Xz-fqj" customClass="FlagDetailsViewController" customModule="TreasureHunt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FlagDetailsViewController" title="Flag Details" id="pvG-Xz-fqj" customClass="FlagDetailsViewController" customModule="TreasureHunt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uNa-c6-dPZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -841,6 +841,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rZo-vt-fdf"/>
+                    <connections>
+                        <outlet property="addressLbl" destination="w3D-8G-a12" id="9JB-lx-ycw"/>
+                        <outlet property="descriptionTxtView" destination="Yel-rk-d0j" id="n7l-w8-FD0"/>
+                        <outlet property="nameLbl" destination="1Xi-7L-HHK" id="bMb-45-d1d"/>
+                        <outlet property="tagsLbl" destination="ldp-bu-gpi" id="Yio-RF-Bp1"/>
+                        <outlet property="taskTxtView" destination="3tY-th-U6u" id="gBm-ed-LQa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIv-QK-WN4" sceneMemberID="firstResponder"/>
             </objects>
@@ -865,11 +872,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="pvG-Xz-fqj" kind="show" id="f5N-PQ-UIF"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Nuo-rA-hey" id="32q-hA-bjp"/>
+                                    <outlet property="delegate" destination="Nuo-rA-hey" id="oG6-m9-DoM"/>
+                                </connections>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A5T-jI-40C">
                                 <rect key="frame" x="57" y="108" width="272" height="34"/>
@@ -915,7 +923,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HM0-IG-fSh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1077" y="796"/>
+            <point key="canvasLocation" x="-1091" y="693"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GE2-l1-9ll">
@@ -937,7 +945,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9JN-jd-sv8"/>
+        <segue reference="MvD-UQ-IPx"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="flag.fill" catalog="system" width="128" height="121"/>

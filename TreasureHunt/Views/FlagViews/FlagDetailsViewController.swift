@@ -9,21 +9,25 @@ import UIKit
 
 class FlagDetailsViewController: UIViewController {
 
+    public var flag = Flag.init(name: "",
+                                address: "",
+                                task: "",
+                                tags: "",
+                                description: "")
+    
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var addressLbl: UILabel!
+    @IBOutlet weak var taskTxtView: UITextView!
+    @IBOutlet weak var tagsLbl: UILabel!
+    @IBOutlet weak var descriptionTxtView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        nameLbl.text = flag.name
+        addressLbl.text = flag.address
+        taskTxtView.text = flag.task
+        tagsLbl.text = flag.tags
+        descriptionTxtView.text = flag.description
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

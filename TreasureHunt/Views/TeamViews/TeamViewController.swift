@@ -13,7 +13,6 @@ class TeamViewController: UIViewController, UITableViewDelegate {
     fileprivate let CELL_ID = "TeamCell"
     
     var teamMembers: [TeamMember] = []
-    var test = ""
     
     private let team_members_reference: DatabaseReference = Database.database().reference(withPath: "team_members")
     
@@ -31,7 +30,6 @@ class TeamViewController: UIViewController, UITableViewDelegate {
         team_members_reference.observeSingleEvent(of: .value) { (snapshot) in
             let snaps = snapshot.children.allObjects.compactMap({$0 as? DataSnapshot})
             let dicts = snaps.compactMap({$0.value as? NSDictionary})
-            print(dicts)
             for dict in dicts{
                 self.teamMembers.append(TeamMember.init(name: dict["name"] as! String,
                                                    phoneNo: dict["phoneNo"] as! String,
