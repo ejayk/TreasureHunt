@@ -8,11 +8,14 @@ import UIKit
 import MessageUI
 
 class TeamDetailsViewController: UIViewController {
-    private var phoneNum = "1231231234" // replace with input phone number, but make sure to format the number before attempting to call
-    private var email = "someone@georgebrown.ca" // replace with team member's email
+    public var name = ""
+    public var phoneNum = "" // replace with input phone number, but make sure to format the number before attempting to call
+    public var email = "" // replace with team member's email
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLbl.text = "Tim"
+        view = view
+        nameLbl.text = name
         phoneLbl.text = phoneNum
         emailLbl.text = email
     }
