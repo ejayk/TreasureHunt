@@ -14,7 +14,7 @@ class TeamDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view = view
+        //view = view
         nameLbl.text = name
         phoneLbl.text = phoneNum
         emailLbl.text = email
