@@ -51,7 +51,7 @@ extension FlagsViewController: UITableViewDataSource{
         let flag = flags[indexPath.row]
         
         //FIX FORMATING BY ADDING A CELL VIEW
-        cell.textLabel?.text = "Name: \(flag.name) Location: \(flag.address)"
+        cell.textLabel?.text = "\(flag.name), \(flag.address)"
         return cell
     }
     

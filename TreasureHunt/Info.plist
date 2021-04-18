@@ -56,9 +56,13 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Using location in order to provide directions and flags in your area</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Using location in order to provide directions and flags in your area</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>comgooglemaps</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
