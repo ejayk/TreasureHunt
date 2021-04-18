@@ -72,7 +72,7 @@
         <!--Main-->
         <scene sceneID="YbT-Ea-Drb">
             <objects>
-                <viewController title="Main" id="3yq-9t-VzZ" customClass="ViewController" customModule="TreasureHunt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main" id="3yq-9t-VzZ" customClass="MainViewController" customModule="TreasureHunt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j58-Sl-Pnq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -407,7 +407,7 @@
                                 <rect key="frame" x="162" y="329" width="169" height="34"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.045091641660000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWh-a3-BV5">
                                 <rect key="frame" x="91" y="399" width="46" height="21"/>
@@ -455,7 +455,7 @@
                                 <rect key="frame" x="162" y="392" width="169" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.045091641660000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" textContentType="email"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Zi-Rj-omx"/>
@@ -952,7 +952,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HM0-IG-fSh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1091" y="693"/>
+            <point key="canvasLocation" x="-1074" y="828"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GE2-l1-9ll">
@@ -982,7 +982,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="MvD-UQ-IPx"/>
+        <segue reference="9JN-jd-sv8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="flag.fill" catalog="system" width="128" height="121"/>
