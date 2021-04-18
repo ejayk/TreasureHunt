@@ -7,9 +7,15 @@
 
 import UIKit
 import Cosmos
+import CoreLocation
+import MapKit
+
 
 class FlagDetailsViewController: UIViewController {
-
+    let geocoder = CLGeocoder()
+    var lat = 0.0
+    var long = 0.0
+    
     public var flag = Flag.init(name: "",
                                 address: "",
                                 task: "",
@@ -24,6 +30,19 @@ class FlagDetailsViewController: UIViewController {
     @IBOutlet weak var descriptionTxtView: UITextView!
     @IBOutlet weak var ratingView: CosmosView!
     
+    @IBAction func showLocation(_ sender: Any) {
+        let coordinate = CLLocationCoordinate2DMake(self.lat, self.long)
+        let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinate, addressDictionary: nil))
+        mapItem.name = flag.name
+        mapItem.openInMaps()
+    }
+    @IBAction func getDirections(_ sender: Any) {
+        let coordinate = CLLocationCoordinate2DMake(self.lat, self.long)
+        let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinate, addressDictionary: nil))
+        mapItem.name = flag.name
+        mapItem.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving])
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,5 +52,19 @@ class FlagDetailsViewController: UIViewController {
         tagsLbl.text = flag.tags
         descriptionTxtView.text = flag.description
         ratingView.rating = flag.rating
+        
+        geocoder.geocodeAddressString(flag.address, completionHandler: {(placemarks, error) -> Void in
+           if((error) != nil){
+            print("Error", error ?? "")
+           }
+           if let placemark = placemarks?.first {
+              let coordinates:CLLocationCoordinate2D = placemark.location!.coordinate
+            self.lat = coordinates.latitude
+            self.long = coordinates.longitude
+           }
+        })
+        
     }
+    
+
 }

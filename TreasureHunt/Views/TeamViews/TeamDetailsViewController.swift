@@ -9,8 +9,8 @@ import MessageUI
 
 class TeamDetailsViewController: UIViewController {
     public var name = ""
-    public var phoneNum = "" // replace with input phone number, but make sure to format the number before attempting to call
-    public var email = "" // replace with team member's email
+    public var phoneNum = ""
+    public var email = "" 
     
     override func viewDidLoad() {
         super.viewDidLoad()
