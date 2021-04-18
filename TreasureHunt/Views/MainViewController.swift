@@ -7,8 +7,12 @@
 
 import UIKit
 import SwiftUI
+import MapKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController, CLLocationManagerDelegate{
+    
+    var locationManager: CLLocationManager!
+    
     @IBOutlet var menuBtns: [UIButton]!
     
     @IBAction func handle(_ sender: UIButton) {
@@ -21,6 +25,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
     }
+    
 }
