@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseDatabase
+import Cosmos
 
 class FlagAddViewController: UIViewController {
     private let ref = Database.database().reference()
@@ -23,6 +24,7 @@ class FlagAddViewController: UIViewController {
     @IBOutlet weak var taskTextField: UITextView!
     @IBOutlet weak var tagsTextField: UITextField!
     @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var ratingView: CosmosView!
     
     
     @IBAction func saveTeamMemberBtn(_ sender: UIButton) {
@@ -34,8 +36,6 @@ class FlagAddViewController: UIViewController {
         let description = descriptionTextView.text
         
         if name != "" && address != "" && task != "" && tags != "" && description != ""{
-            //TeamViewController.setTeammate(name: name, phoneNo: phone, email: email)
-            
     
             let flagObject: [String:Any] = [
                 "name": name ?? "" as NSObject,

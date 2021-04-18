@@ -639,6 +639,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xYf-T4-cIZ" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="142" y="608" width="129" height="21"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minTouchRating">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KRE-iN-ADX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -654,13 +666,16 @@
                             <constraint firstItem="duw-9X-4rt" firstAttribute="leading" secondItem="uHE-o4-btX" secondAttribute="leading" id="Dfi-1j-XS7"/>
                             <constraint firstItem="KRE-iN-ADX" firstAttribute="trailing" secondItem="KSK-ud-w7x" secondAttribute="trailing" constant="37" id="Gg4-fJ-iQ4"/>
                             <constraint firstItem="duw-9X-4rt" firstAttribute="trailing" secondItem="DJ0-ma-7vF" secondAttribute="trailing" id="HGr-Pu-4wk"/>
+                            <constraint firstItem="xYf-T4-cIZ" firstAttribute="centerY" secondItem="uHE-o4-btX" secondAttribute="centerY" id="HXY-le-wnb"/>
                             <constraint firstItem="a5h-M4-QtI" firstAttribute="leading" secondItem="KRE-iN-ADX" secondAttribute="leading" constant="180" id="JaU-vG-k5q"/>
+                            <constraint firstItem="a5h-M4-QtI" firstAttribute="top" secondItem="xYf-T4-cIZ" secondAttribute="bottom" constant="91" id="KqZ-MG-LIw"/>
                             <constraint firstItem="a5h-M4-QtI" firstAttribute="centerX" secondItem="VT5-cp-1OB" secondAttribute="centerX" id="Luq-hy-Uzj"/>
                             <constraint firstItem="cqC-Wz-ff8" firstAttribute="leading" secondItem="j9l-uL-pLn" secondAttribute="leading" id="M90-Lw-7AO"/>
                             <constraint firstItem="KSK-ud-w7x" firstAttribute="trailing" secondItem="cqC-Wz-ff8" secondAttribute="trailing" id="MEF-xB-dzH"/>
                             <constraint firstItem="DJ0-ma-7vF" firstAttribute="top" secondItem="cqC-Wz-ff8" secondAttribute="top" id="MY6-In-Apx"/>
                             <constraint firstItem="fTP-T5-T8Y" firstAttribute="top" secondItem="GqX-sa-NeF" secondAttribute="bottom" constant="32" id="RSP-gM-bfa"/>
                             <constraint firstItem="DJ0-ma-7vF" firstAttribute="leading" secondItem="KRE-iN-ADX" secondAttribute="leading" constant="52" id="SxK-jh-dhA"/>
+                            <constraint firstItem="xYf-T4-cIZ" firstAttribute="leading" secondItem="uHE-o4-btX" secondAttribute="trailing" constant="13" id="T8P-Ah-ZdB"/>
                             <constraint firstItem="KSK-ud-w7x" firstAttribute="leading" secondItem="cqC-Wz-ff8" secondAttribute="leading" id="V93-Ju-FsH"/>
                             <constraint firstItem="rWC-Om-0wN" firstAttribute="trailing" secondItem="GqX-sa-NeF" secondAttribute="trailing" id="W2K-N6-900"/>
                             <constraint firstItem="GqX-sa-NeF" firstAttribute="centerY" secondItem="j9l-uL-pLn" secondAttribute="centerY" id="WE6-1P-gE0"/>
@@ -669,6 +684,7 @@
                             <constraint firstItem="0aO-uo-iEo" firstAttribute="top" secondItem="cqC-Wz-ff8" secondAttribute="bottom" constant="21" id="XnE-O9-DgH"/>
                             <constraint firstItem="KRE-iN-ADX" firstAttribute="bottom" secondItem="uHE-o4-btX" secondAttribute="bottom" constant="179" id="Y8H-th-D1K"/>
                             <constraint firstItem="fTP-T5-T8Y" firstAttribute="trailing" secondItem="uHE-o4-btX" secondAttribute="trailing" id="etU-WZ-Ht0"/>
+                            <constraint firstItem="xYf-T4-cIZ" firstAttribute="top" secondItem="uHE-o4-btX" secondAttribute="top" id="f77-GI-wJI"/>
                             <constraint firstItem="rWC-Om-0wN" firstAttribute="leading" secondItem="GqX-sa-NeF" secondAttribute="leading" id="fa5-Ee-28R"/>
                             <constraint firstItem="Hy6-hm-XWV" firstAttribute="top" secondItem="j9l-uL-pLn" secondAttribute="bottom" constant="26" id="lCr-SW-gBx"/>
                             <constraint firstItem="0aO-uo-iEo" firstAttribute="leading" secondItem="rWC-Om-0wN" secondAttribute="trailing" constant="6.5" id="mkJ-dm-eTa"/>
@@ -687,13 +703,14 @@
                         <outlet property="addressTextField" destination="cqC-Wz-ff8" id="JEe-0n-0V1"/>
                         <outlet property="descriptionTextView" destination="Hy6-hm-XWV" id="rRI-q9-sWV"/>
                         <outlet property="nameTextField" destination="KSK-ud-w7x" id="BWF-Ru-LQn"/>
+                        <outlet property="ratingView" destination="xYf-T4-cIZ" id="a1z-fy-3my"/>
                         <outlet property="tagsTextField" destination="j9l-uL-pLn" id="Pok-oc-tf9"/>
                         <outlet property="taskTextField" destination="0aO-uo-iEo" id="ybE-mD-wuF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a2w-cs-o0d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1475" y="1488"/>
+            <point key="canvasLocation" x="-1475.3623188405797" y="1487.9464285714284"/>
         </scene>
         <!--Flag Details-->
         <scene sceneID="NQM-Ul-qmF">
@@ -809,6 +826,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XWP-Ne-yjc" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="119" y="634" width="129" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KgN-az-Xcf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -944,6 +972,14 @@
             <point key="canvasLocation" x="-230" y="87"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="XWP-Ne-yjc">
+            <size key="intrinsicContentSize" width="120" height="20"/>
+        </designable>
+        <designable name="xYf-T4-cIZ">
+            <size key="intrinsicContentSize" width="120" height="20"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="MvD-UQ-IPx"/>
     </inferredMetricsTieBreakers>
