@@ -16,6 +16,8 @@ class FlagDetailsViewController: UIViewController {
     var lat = 0.0
     var long = 0.0
     
+    isUpdate = false
+    
     public var flag = Flag.init(name: "",
                                 address: "",
                                 task: "",
@@ -67,7 +69,9 @@ class FlagDetailsViewController: UIViewController {
     }
     
     @IBAction func updateBtn(_ sender: UIButton) {
-        
+        if !isUpdate{
+            
+        }
     }
     
 }
