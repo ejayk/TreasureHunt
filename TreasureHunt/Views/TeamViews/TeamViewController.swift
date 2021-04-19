@@ -9,7 +9,7 @@ import UIKit
 import FirebaseDatabase
 
 class TeamViewController: UIViewController, UITableViewDelegate {
-
+    
     fileprivate let CELL_ID = "TeamCell"
     
     var teamMembers: [TeamMember] = []
@@ -18,7 +18,7 @@ class TeamViewController: UIViewController, UITableViewDelegate {
     
     @IBOutlet weak var teamMembersTblView: UITableView!
     @IBAction func plusButton(_ sender: UIBarButtonItem) {
-        let addTeamVC = storyboard?.instantiateViewController(identifier: "AddTeam") as! AddTeamViewController
+        let addTeamVC = storyboard?.instantiateViewController(identifier: "AddTeamViewController") as! AddTeamViewController
         addTeamVC.modalPresentationStyle = .automatic
         present(addTeamVC, animated: true)
     }
@@ -31,9 +31,10 @@ class TeamViewController: UIViewController, UITableViewDelegate {
             let snaps = snapshot.children.allObjects.compactMap({$0 as? DataSnapshot})
             let dicts = snaps.compactMap({$0.value as? NSDictionary})
             for dict in dicts{
-                self.teamMembers.append(TeamMember.init(name: dict["name"] as! String,
-                                                   phoneNo: dict["phoneNo"] as! String,
-                                                   email: dict["email"] as! String))
+                self.teamMembers.append(TeamMember.init(uid: dict["uid"] as! String,
+                                                        name: dict["name"] as! String,
+                                                        phoneNo: dict["phoneNo"] as! String,
+                                                        email: dict["email"] as! String))
             }
             self.teamMembersTblView.reloadData()
         }
@@ -59,9 +60,7 @@ extension TeamViewController: UITableViewDataSource{
         tableView.deselectRow(at: indexPath, animated: true)
         let vc = storyboard?.instantiateViewController(identifier: "TeamDetailsViewController") as? TeamDetailsViewController
         let teamMember = teamMembers[indexPath.row]
-        vc?.name = teamMember.name
-        vc?.email = teamMember.email
-        vc?.phoneNum = teamMember.phoneNo
+        vc?.teamMember = teamMember
         vc?.title = "\(teamMember.name) Details"
         self.navigationController?.pushViewController(vc!, animated: true)
     }

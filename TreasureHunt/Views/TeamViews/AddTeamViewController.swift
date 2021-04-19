@@ -15,9 +15,6 @@ class AddTeamViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    
-    public var TeammateData: ((String?, String?, String?) -> Void)?
-    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -29,20 +26,22 @@ class AddTeamViewController: UIViewController {
         
         
         if name != "" && phone != "" && email != ""{
-            //TeamViewController.setTeammate(name: name, phoneNo: phone, email: email)
+            let addTeam = ref.child("team_members").childByAutoId()
+            let uid = addTeam.key!
             
-            let memberToAdd = TeamMember(name: name,
+            let memberToAdd = TeamMember(uid: uid,
+                                         name: name,
                                          phoneNo: phone,
                                          email: email)
             let memberObject: [String:Any] = [
-                "name": memberToAdd.name as NSObject,
+                "uid": memberToAdd.uid as NSObject,
+                "name": memberToAdd.name,
                 "phoneNo": memberToAdd.phoneNo,
                 "email": memberToAdd.email
             ]
 
             
-            ref.child("team_members").childByAutoId().setValue(memberObject)
-            TeammateData?(name, phone, email)
+            addTeam.setValue(memberObject)
             dismiss(animated: true, completion: nil)
         }
     }
