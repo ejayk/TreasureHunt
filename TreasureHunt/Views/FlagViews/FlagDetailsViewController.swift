@@ -66,5 +66,8 @@ class FlagDetailsViewController: UIViewController {
         
     }
     
-
+    @IBAction func updateBtn(_ sender: UIButton) {
+        
+    }
+    
 }
