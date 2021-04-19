@@ -844,7 +844,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWP-Ne-yjc" customClass="CosmosView" customModule="Cosmos">
-                                <rect key="frame" x="119" y="634" width="129" height="21"/>
+                                <rect key="frame" x="119" y="634" width="120" height="20"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="rating">
