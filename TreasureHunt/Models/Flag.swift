@@ -10,6 +10,7 @@ import Foundation
 //ADD BACK RATINGS
 //MAKE TAGS AN ARRAY
 struct Flag{
+    var uid: String
     var name: String
     var address: String
     var task: String

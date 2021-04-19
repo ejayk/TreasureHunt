@@ -874,20 +874,20 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Coe-tH-9Y1">
-                                <rect key="frame" x="119" y="159" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfF-Hg-6Ol">
-                                <rect key="frame" x="119" y="424" width="97" height="34"/>
+                                <rect key="frame" x="192" y="424" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kxZ-vJ-vWI">
-                                <rect key="frame" x="119" y="215" width="97" height="34"/>
+                                <rect key="frame" x="207" y="215" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Coe-tH-9Y1">
+                                <rect key="frame" x="207" y="159" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -947,10 +947,13 @@
                     <navigationItem key="navigationItem" id="rZo-vt-fdf"/>
                     <connections>
                         <outlet property="addressLbl" destination="w3D-8G-a12" id="9JB-lx-ycw"/>
+                        <outlet property="addressTxt" destination="w3D-8G-a12" id="6DL-Eh-T9h"/>
                         <outlet property="descriptionTxtView" destination="Yel-rk-d0j" id="n7l-w8-FD0"/>
                         <outlet property="nameLbl" destination="1Xi-7L-HHK" id="bMb-45-d1d"/>
+                        <outlet property="nameTxt" destination="Coe-tH-9Y1" id="iSo-k5-Ahz"/>
                         <outlet property="ratingView" destination="XWP-Ne-yjc" id="di4-dl-yHd"/>
                         <outlet property="tagsLbl" destination="ldp-bu-gpi" id="Yio-RF-Bp1"/>
+                        <outlet property="tagsTxt" destination="ldp-bu-gpi" id="Biz-Fn-747"/>
                         <outlet property="taskTxtView" destination="3tY-th-U6u" id="gBm-ed-LQa"/>
                     </connections>
                 </viewController>
