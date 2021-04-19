@@ -38,8 +38,12 @@ class FlagAddViewController: UIViewController {
         
         if name != "" && address != "" && task != "" && tags != "" && description != ""{
     
+            let flagsRef = ref.child("flags").childByAutoId()
+            let uid = flagsRef.key
+            
             let flagObject: [String:Any] = [
-                "name": name ?? "" as NSObject,
+                "uid": uid ?? "" as NSObject,
+                "name": name ?? "",
                 "address": address ?? "",
                 "task": task ?? "",
                 "tags": tags ?? "",
@@ -48,7 +52,7 @@ class FlagAddViewController: UIViewController {
             ]
 
             
-            ref.child("flags").childByAutoId().setValue(flagObject)
+            flagsRef.setValue(flagObject)
             dismiss(animated: true, completion: nil)
         }
     }

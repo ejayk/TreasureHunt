@@ -30,7 +30,8 @@ class FlagsViewController: UIViewController, UITableViewDelegate, UISearchBarDel
             let snaps = snapshot.children.allObjects.compactMap({$0 as? DataSnapshot})
             let dicts = snaps.compactMap({$0.value as? NSDictionary})
             for dict in dicts{
-                self.flags.append(Flag.init(name: dict["name"] as! String,
+                self.flags.append(Flag.init(uid: dict["uid"] as! String,
+                                            name: dict["name"] as! String,
                                             address: dict["address"] as! String,
                                             task: dict["task"] as! String,
                                             tags: dict["tags"] as! String,
