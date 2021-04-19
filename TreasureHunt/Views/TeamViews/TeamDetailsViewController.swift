@@ -6,20 +6,33 @@
 //
 import UIKit
 import MessageUI
+import FirebaseDatabase
 
 class TeamDetailsViewController: UIViewController {
-//    public var name = ""
-//    public var phoneNum = ""
-//    public var email = ""
+    //    public var name = ""
+    //    public var phoneNum = ""
+    //    public var email = ""
     
     public var teamMember = TeamMember.init(uid: "",
                                             name: "",
                                             phoneNo: "",
                                             email: "")
     public var didUpdate = false
+    public var updated = false
+    
+    var name = ""
+    var email = ""
+    var phoneNo = ""
+    
+    let ref = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.name = teamMember.name
+        self.email = teamMember.email
+        self.phoneNo = teamMember.phoneNo
+        
         nameLbl.text = teamMember.name
         phoneLbl.text = teamMember.phoneNo
         emailLbl.text = teamMember.email
@@ -95,10 +108,6 @@ class TeamDetailsViewController: UIViewController {
     
     //MARK: Update on the same page
     @IBAction func updateBtn(_ sender: UIButton) {
-        var name = teamMember.name
-        var email = teamMember.email
-        var phoneNo = teamMember.phoneNo
-        
         if !didUpdate{
             //Changing name
             nameTextView.isHidden = false
@@ -121,21 +130,28 @@ class TeamDetailsViewController: UIViewController {
             nameTextView.isHidden = true
             nameLbl.isHidden = false
             name = nameTextView.text!
-            nameLbl.text = teamMember.name
+            nameLbl.text = name
             
             //Changing Phone
             phoneTextView.isHidden = true
             phoneLbl.isHidden = false
             phoneNo = phoneTextView.text!
-            phoneLbl.text = teamMember.phoneNo
+            phoneLbl.text = phoneNo
             
             //Changing Email
             emailTextView.isHidden = true
             emailLbl.isHidden = false
             email = emailTextView.text!
-            emailLbl.text = teamMember.email
+            emailLbl.text = email
             
-            print(teamMember.name)
+            let teamUpdate = ["uid": teamMember.uid,
+                              "name": name,
+                              "email": email,
+                              "phoneNo": phoneNo]
+            
+            let childUpdates = ["/team_members/\(teamMember.uid)": teamUpdate]
+            
+            ref.updateChildValues(childUpdates)
             
             didUpdate = false
         }
