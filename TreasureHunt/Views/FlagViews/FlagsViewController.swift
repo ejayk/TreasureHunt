@@ -8,18 +8,22 @@
 import UIKit
 import FirebaseDatabase
 
-class FlagsViewController: UIViewController, UITableViewDelegate {
+class FlagsViewController: UIViewController, UITableViewDelegate, UISearchBarDelegate {
     
     var flags: [Flag] = []
+    //var filteredFlags: [Flag]! = []
     
     fileprivate let CELL_ID = "FlagCell"
     
     private let flags_reference: DatabaseReference = Database.database().reference(withPath: "flags")
     
     @IBOutlet weak var flagsTbl: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //searchBar.delegate = self
+
         flagsTbl.dataSource = self
         flagsTbl.delegate = self
         flags_reference.observeSingleEvent(of: .value) { (snapshot) in
@@ -36,6 +40,19 @@ class FlagsViewController: UIViewController, UITableViewDelegate {
             self.flagsTbl.reloadData()
         }
     }
+    
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        filteredFlags = []
+//        if searchText == ""{
+//            filteredFlags = flags.name
+//        }
+//        for flag in flags{
+//            if flag.name.contains(searchText.lowercased()){
+//                filteredFlags.append(flag.name)
+//            }
+//        }
+//        self.flagsTbl.reloadData()
+//    }
     
 }
 

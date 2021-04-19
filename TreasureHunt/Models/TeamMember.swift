@@ -8,6 +8,7 @@
 import Foundation
 
 struct TeamMember{
+    let uid: String
     let name: String
     let phoneNo: String
     let email: String
